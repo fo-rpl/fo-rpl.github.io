@@ -1,0 +1,1 @@
+function hilangkan() {document.getElementById("sticky-ad").style = "bottom: -55px";}
