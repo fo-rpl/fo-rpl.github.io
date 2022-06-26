@@ -1,0 +1,21 @@
+git init
+git rm data.json
+git commit -m "first commit"
+git branch -M master
+git remote add origin https://github.com/fo-rpl/fo-rpl.github.io.git
+git pull --rebase origin master
+git pull
+git push -u origin master
+
+sleep 1
+echo '\n menjalankan perintah:\n'
+sleep 1
+
+git init
+git add *
+git commit -m "first commit"
+git branch -M master
+git remote add origin https://github.com/fo-rpl/fo-rpl.github.io.git
+git pull --rebase origin master
+git pull
+git push -u origin master

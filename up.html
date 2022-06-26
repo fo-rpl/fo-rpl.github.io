@@ -1,0 +1,110 @@
+
+ 
+ 
+     
+<html>
+  <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP Test boss</title>
+    <style>
+    body{
+     background: darkslateblue;
+    }
+     .hader{
+      background-color: blue;
+      color: lightblue;
+      height: 60px;
+      z-index: 1000;
+      position: fixed;
+      top: 0;right: 0;left: 0;
+      width: 100%;
+     }
+     .hader h2{
+      margin-left: 30px;
+      margin-top: 15px;
+      border-bottom: 2px solid skyblue;
+      width: 190px;
+      border-radius: 0px 0px 30px 0px;
+      font-style: italic;
+     }
+     .isi{
+      position: relative;
+      top: 50px;
+      background-color: black;
+      color: white;
+     }
+     .jero{
+      margin: 10px;
+      text-align: center;
+     }
+     h3{
+      margin-bottom: 0px;
+     }
+     input{
+      border:none;
+     }
+     .input1{
+      height: 30px;
+      width: 80%;
+      text-align: center;
+      background: purple;
+      color: white;
+      font-weight: bold;
+      border-radius: 9px;
+     }
+     
+     #simpan{
+      height: 30px;
+      width:100%;
+      text-align: center;
+      background: purple;
+      color: white;
+      font-weight: bold;
+      border-radius: 9px;
+     }
+     .input2{
+      background: black;
+     }
+    </style>
+  </head>
+  <body>
+   <div class="hader">
+    <h2>File Uploader</h2>
+   </div>
+   <div class="isi">
+    <div class="jero">
+     <br>
+     <h3>File</h3>
+<form method="post" action="proses.php" id="file-user" enctype="multipart/form-data">
+ <br><br>
+ <input class="input1" type="text" name="nem" placeholder="nama" value="">
+ <br><br>
+ <b>zip file</b>
+ <p>
+ <input class="input 2" type="file" name="zipfile[]" accept="" multiple> 
+</p>
+ <b>upload file + ads</b>
+ <p>
+ <input class="input 2" type="file" name="listGambar[]" accept="" multiple> 
+</p>
+ <b>upload file no ads</b>
+ <p>
+ <input class="input 2" type="file" name="listGambar5[]" accept="" multiple> 
+</p>
+ <b>upload gambar</b>
+ <p>
+ <input class="input 2" type="file" name="listGambar1[]" accept="image/png, image/gif, image/jpeg" placeholder="gambar" value="gambar"> 
+</p>
+ <br><br>
+ <input class="simpan" type="submit" id="simpan" name="proses" value="upload">
+ <br>
+</form>
+
+
+
+</div>
+</div>
+
+</body>
+</html>
