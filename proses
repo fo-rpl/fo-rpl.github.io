@@ -2,7 +2,7 @@
 git config --global user.email "toktokgaming1@gmail.com"
 git config --global user.name "fo-rpl"
 
-git add *
+git rm download.html
 git commit -m "first commit"
 git branch -M master
 git remote add origin https://github.com/fo-rpl/fo-rpl.github.io.git
@@ -11,16 +11,13 @@ git rebase --continue
 git pull origin master
 git push -u origin master
 
-sleep 1
-echo '\n menjalankan perintah:\n'
-sleep 1
-/*
-git init
-git add *
-git commit -m "fir"
+
+git add download.html
+git commit -m "first commit"
 git branch -M master
 git remote add origin https://github.com/fo-rpl/fo-rpl.github.io.git
 git pull --rebase origin master
 git rebase --continue
 git pull origin master
-git push -u origin master*/
+git push -u origin master
+

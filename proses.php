@@ -87,7 +87,7 @@ $anggota = file_get_contents($file);
 
 $gambarku = 'https://fo-rpl.github.io/'.$berkas.'/gambar/'.$namaFile1;
 $dnld = 'https://fo-rpl.github.io/'.$berkas.'/down/'.$namaFile0;
-$shrbtn = 'https://api.whatsapp.com/send?text=https://fo-rpl.github.io/'.$berkas.'/shr/'.$namaFile5;
+$shrbtn = 'https://fo-rpl.github.io/'.$berkas.'shr/'.$namaFile5;
 $dmbtn = 'https://fo-rpl.github.io/'.$berkas.$namaFiles;
 
 $data = json_decode($anggota,true);
