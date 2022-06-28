@@ -1,5 +1,5 @@
 
-git config --global user.email "toktokgaming1@gmail.com"
+                git config --global user.email "toktokgaming1@gmail.com"
 git config --global user.name "fo-rpl"
 
 git add *
