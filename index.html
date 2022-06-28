@@ -19,7 +19,7 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2793038976305606" crossorigin="anonymous"></script>
 </head>
 
 <body id="page-top">
@@ -298,13 +298,13 @@ xhttp.onreadystatechange = function(){
 if (this.readyState == 4 && this.status == 200)
 { var data=JSON.parse(xhttp.responseText);
 data.forEach(function(element)
-{ document.getElementById("datas").innerHTML +=`<div class="card shadow mb-1" style="">
+{ document.getElementById("datas").innerHTML +=`<a target="_blank" rel="nofollow" href="` + element.url + `"><div class="card shadow mb-1" style="">
                                 <div class="card-header py-3">
                                     <h6 class="m-0 font-weight-bold text-primary">` + element.judul + `</h6>
                                 </div>
                                 <div class="card-body">
                                     <div class="text-center">
-                                        <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;"src="` + element.image + `" alt="..."></div><p>` + element.deskrisi + `</p><a target="_blank" rel="nofollow" href="` + element.url + `">Klik untuk selengkapnya... &rarr;</a></div></div>`; }); } }; xhttp.open("GET", "upload.json", true); xhttp.send(); 
+                                        <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;"src="` + element.image + `" alt="..."></div><p>` + element.deskrisi + `</p><a target="_blank" rel="nofollow" href="` + element.url + `">Klik untuk selengkapnya... &rarr;</a></div></div></a>`; }); } }; xhttp.open("GET", "upload.json", true); xhttp.send(); 
 </script>
                     <!-- Content Row -->
                     <div class="row">
