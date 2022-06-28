@@ -1,23 +1,25 @@
 
-git config --global user.email "toktokgaming1@gmail.com"
+                git config --global user.email "toktokgaming1@gmail.com"
 git config --global user.name "fo-rpl"
+printf "add proses \n"
+count=0
+total=14
+pstr="[===================================]"
+while [ $count -lt $total ]; do
+  sleep 0.01 # this is work                                                                                             count=$(( $count + 1 ))
+  pd=$(( $count * 40 / $total ))
+  printf "\r%3d.%1d%% %.${pd}s " $(( $count *100 / $total )) $(( ($count * 100 / $total) % 10 )) $pstr
+done
+printf "\n"
 
-git rm download.html
+git add *
 git commit -m "first commit"
 git branch -M master
 git remote add origin https://github.com/fo-rpl/fo-rpl.github.io.git
 git pull --rebase origin master
 git rebase --continue
 git pull origin master
+
 git push -u origin master
 
-
-git add download.html
-git commit -m "first commit"
-git branch -M master
-git remote add origin https://github.com/fo-rpl/fo-rpl.github.io.git
-git pull --rebase origin master
-git rebase --continue
-git pull origin master
-git push -u origin master
 
