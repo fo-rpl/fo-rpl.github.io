@@ -14,20 +14,45 @@
 <form id="editor" style="position:fixed;bottom:0;right:0;left:0" action="create.php" method="post">
           <textarea style="background:transparent;height:180px;width:90%;opacity:0.5;color:red" readonly="readonly" type="text" id="data1" name="data"></textarea>
 <br>
-         &nbsp;nama file =<input style="background:transparent" readonly="readonly" type="text" id="jfile" name="jfile"><br>
-         &nbsp;judul hal &nbsp;=<input style="background:transparent" readonly="readonly" type="text" id="judulf" name="jdul"><br>
+         &nbsp;nama file =<input style="background:transparent" type="text" id="jfile" name="jfile"><br>
+         &nbsp;judul hal &nbsp;=<input style="background:transparent" type="text" id="judulf" name="jdul"><br>
        <input type="submit" style="" onclick="alert('fungsi simpan ini hanya untuk menympan dalam bentuk file, halaman ini tidak akan meninggalkan jejak, pastikan projek kamu telah selesai, kamu bisa minympan text di hp mu jika ingin melanjutkan nanti')" value="simpan">
 
          <button type="button" onclick="document.getElementById('myinput').style='font-family: monospace;font-size: 10px; display:block;width:85%;height:310px;margin-left:20px;background:white;font-size:15px;'" value="2× size">max-size</button>
          <button type="button" onclick="document.getElementById('myinput').style='font-family: monospace;font-size: 10px; display:block;width:60%;height:60px;max-height:200px;margin-left:20px;background:transparent'" value="1× size">min size</button>
 
+
+<input onclick="editz1()" style="position:fixed;top:50px;right:0;" type="button" value="link">
+
+<input onclick="h()" style="position:fixed;top:90px;right:0;" type="button" value="<h>">
+
+<input onclick="br()" style="position:fixed;top:130px;right:0;" type="button" value="<br>">
+
+<input onclick="img()" style="position:fixed;top:170px;right:0;" type="button" value="img">
+
+<input onclick="li()" style="position:fixed;top:210px;right:0;" type="button" value="Li">
+
+<input onclick="fokus()" style="position:fixed;top:250px;right:0;" type="reset" value="clear">
+
+
   <textarea id="myinput" type="text"
          placeholder=""
          style="font-family: monospace;
          font-size: 10px; display:block;min-width:60%; max-width:75%;width:70%;min-height:60px;max-height:200px;margin-left:20px;background:transparent"></textarea>
+
 </form>
 
+<!--
+name = prompt('buat nama file');
+judul = prompt('buat judul');
+document.getElementById('jfile').value=name;
+document.getElementById('judulf').value=judul;
+
+-->
 <script>
+function fokus(){
+document.getElementById("myinput").focus();
+}
 function Rview() {
 document.getElementById('editor').style.display='none';
 document.getElementById('rvi1').style.top="0";
@@ -38,10 +63,41 @@ document.getElementById('editor').style.display='block';
 document.getElementById('rvi').style.top="0";
 document.getElementById('rvi1').style.top="-50px";
 }
-name = prompt('buat nama file');
-judul = prompt('buat judul');
-document.getElementById('jfile').value=name;
-document.getElementById('judulf').value=judul;
+
+function editz1(){
+url = prompt('link url');
+taut = prompt('nama');
+document.getElementById('myinput').value +='<a href="' + url + '">' + taut + '</a>';
+fokus();
+}
+function h(){
+url = prompt('ukuran <h></h>');
+taut = prompt('nama');
+document.getElementById('myinput').value +='<h' + url + ' class="m-0 font-weight-bold text-primary">' + taut + '</h' + url + '>';
+fokus()
+}
+function br(){
+document.getElementById('myinput').value +='<br>';
+fokus()
+}
+function img(){
+url = prompt('link url');
+document.getElementById('myinput').value +='<img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;"src="' + url + '">';
+fokus()
+}
+function li(){
+document.getElementById('myinput').value +='<li>';
+fokus();
+document.getElementById('myinput').value +='</li>';
+}
+document.getElementById('jfile').value ="judul.html";
+document.getElementById('jfile').addEventListener('keyup',
+name = this.value
+)
+document.getElementById('judulf').addEventListener('keyup',
+function (){judul = this.value}
+)
+
 document.getElementById('myinput').addEventListener('keyup',
 function(e) {
 
