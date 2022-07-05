@@ -32,7 +32,8 @@ $anggota = file_get_contents($file);
 $data = json_decode($anggota,true);
 $data [] =array(
      'url' => 'http://localhost:8080/download.html?gmb='.$gambar.'&dw='.$download.'&dm='.$demo.'&wa='.$share,
-     'nama' => $nama
+     'nama' => $nama,
+     'png' => $gambar
      );
      
 $jsonfile = json_encode($data, JSON_PRETTY_PRINT);

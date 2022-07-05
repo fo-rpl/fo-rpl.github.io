@@ -9,7 +9,7 @@
     <meta name="description" content="artikel terbaik, template html gratis, download html bucin, cara membuat akun github, cara membuat akun Replit">
     <meta name="author" content="irul">
 
-    <title>FO-REPL - Dashboard</title>
+    <title>FO-REPL</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -19,97 +19,44 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2793038976305606" crossorigin="anonymous"></script>
-</head>
-   <!--
+
+   
 <script async="async" data-cfasync="false" src="https://upgulpinon.com/1?z=5199453"></script>
--->
+<script>(function(d,z,s){s.src='https://'+d+'/401/'+z;try{(document.body||document.documentElement).appendChild(s)}catch(e){}})('oaphoace.net',5199462,document.createElement('script'))</script>
+<style> 
+@keyframes kelap{
+0%{
+ Background: aqua;
+ Border-left:4px solid darkslateblue;
+Border-top:3px solid darkslateblue;
+Border-bottom:1px solid darkslateblue
+}
+50%{
+ Background: lightblue;
+Border-left:1px solid darkslateblue;
+Border-right:3px solid darkslateblue;
+Border-bottom:3px solid darkslateblue
+}
+100%{
+ Background: aqua;
+Border-left:4px solid darkslateblue;
+Border-top:3px solid darkslateblue;
+Border-bottom:1px solid darkslateblue
+}
+}
+.dvs{
+height:110; background: lightblue; border-radius:10px; animation-duration:3s; animation-iteration-count: infinite;animation-name:kelap;Border-left:4px solid darkslateblue
+}
+.vs1{
+position: relative;top:-44;left:120; background:lightgreen;width:70;height:30;border:2px solid darkslateblue; border-radius:5px; font-weight:bold; text-align:center;color:white
+}
+</style>
+</head>
+
 <body id="page-top">
 
     <!-- Page Wrapper -->
     <div id="wrapper">
-
-        <!-- Sidebar -->
-        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-
-            <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-                <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-laugh-wink"></i>
-                </div>
-                <div class="sidebar-brand-text mx-3">fo-rpl <sup>github</sup></div>
-            </a>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider my-0">
-
-            <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
-                <a class="nav-link" href="index.html">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
-            </li>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider">
-
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                support
-            </div>
-
-            <!-- Nav Item - Pages Collapse Menu -->
-          
-            <!-- Nav Item - Utilities Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="https://saweria.co/stsr" data-toggle="collapse" data-target="#collapseUtilities"
-                    aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-fw fa-wrench"></i>
-                    <span>Donation</span>
-                </a>
-                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
-                    data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Donation:</h6>
-                        <a class="collapse-item" href="https://saweria.co/stsr">Saweria</a>
-                    </div>
-                </div>
-            </li>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider">
-
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                Addons
-            </div>
-
-            <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
-                    aria-expanded="true" aria-controls="collapsePages">
-                    <i class="fas fa-fw fa-folder"></i>
-                    <span>Pages</span>
-                </a>
-                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Web page:</h6>
-                        <a class="collapse-item" href="https://zhajsknkan.blogspot.com">blogger</a>
-                        <a class="collapse-item" href="https://fo-rpl.github.io">Github</a>
-                        <a class="collapse-item" href="https://file.only-me.repl.co/tmplt/down.html">Replit</a>
-                    </div>
-                </div>
-            </li>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider d-none d-md-block">
-
-            <!-- Sidebar Toggler (Sidebar) -->
-            <div class="text-center d-none d-md-inline">
-                <button class="rounded-circle border-0" id="sidebarToggle"></button>
-            </div>
-        </ul>
-        <!-- End of Sidebar -->
 
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
@@ -121,8 +68,8 @@
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
                     <!-- Sidebar Toggle (Topbar) -->
-                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-                        <i class="fa fa-bars"></i>
+                    <button class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i>Script html</i>
                     </button>
 
                     <!-- Topbar Search -->
@@ -130,9 +77,9 @@
                         class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                         <div class="input-group">
                             <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
-                                aria-label="Search" aria-describedby="basic-addon2" id="Search1"  onkeyup='searchTable()'>
+                                aria-label="Search" aria-describedby="basic-addon2">
                             <div class="input-group-append">
-                                <button class="btn btn-primary" type="button" onclick="alert('hanya mendukung versi mobile')">
+                                <button class="btn btn-primary" type="button">
                                     <i class="fas fa-search fa-sm"></i>
                                 </button>
                             </div>
@@ -144,9 +91,9 @@
 
                         <!-- Nav Item - Search Dropdown (Visible Only XS) -->
                         <li class="nav-item dropdown no-arrow d-sm-none">
-                            <a class="nav-link dropdown-toggle" role="button"
+                            <a class="nav-link dropdown-toggle" id="searchDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-search fa-fw"></i>
+                               <i class="fas fa-search fa-fw"></i>
                             </a>
                             <!-- Dropdown - Messages -->
                             <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
@@ -155,7 +102,7 @@
                                     <div class="input-group">
                                         <input type="text" class="form-control bg-light border-0 small"
                                             placeholder="Search for..." aria-label="Search"
-                                            aria-describedby="basic-addon2" id="Search" onkeyup='searchTable()'>
+                                            aria-describedby="basic-addon2">
                                         <div class="input-group-append">
                                             <button class="btn btn-primary" type="button">
                                                 <i class="fas fa-search fa-sm"></i>
@@ -210,7 +157,7 @@
                                     </div>
                                     <div>
                                         <div class="small text-gray-500">25 Juni, 2022</div>
-                                        copyright sepenuhnya dimiliki oleh fo-rpl.github.io
+                                        copyright mungkin dimiliki oleh creator script html, hubungi admin ...
                                     </div>
                                 </a>
                                 <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
@@ -259,10 +206,6 @@
                 <div class="container-fluid">
 
 
-            
-                    <!-- Content Row -->
-
-
                     <div class="row">
 
                         <!-- Pie Chart -->
@@ -271,11 +214,11 @@
                                 <!-- Card Header - Dropdown -->
                                 <div
                                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">My Post</h6>
-                                    <div class="dropdown no-arrow"><!--
+                                    <h6 class="m-0 font-weight-bold text-primary">Script html bucin</h6>
+                                    <div class="dropdown no-arrow">
                                         <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>-->
+                                            <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
                                             aria-labelledby="dropdownMenuLink">
@@ -293,36 +236,67 @@
                             </div>
                         </div>
                     </div>
-
-<script type="text/javascript">
-var xhttp = new XMLHttpRequest();
-xhttp.onreadystatechange = function(){ 
-if (this.readyState == 4 && this.status == 200)
-{ var data=JSON.parse(xhttp.responseText);
-data.forEach(function(element)
-{ document.getElementById("datas").innerHTML +=`<a target="_blank" rel="nofollow" href="` + element.url + `"><div class="card shadow mb-1" style="">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">` + element.judul + `</h6>
-                                </div>
-                                <div class="card-body">
-                                    <div class="text-center">
-                                        <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;"src="` + element.image + `" alt="..."></div><p>` + element.deskrisi + `</p><a target="_blank" rel="nofollow" href="` + element.url + `">Klik untuk selengkapnya... &rarr;</a></div></div></a>`; }); } }; xhttp.open("GET", "upload.json", true); xhttp.send(); 
-</script>
                     <!-- Content Row -->
                     <div class="row">
-
+<div style="margin-left:8px"> <script type="text/javascript">
+	atOptions = {
+		'key' : '5191ed80f94c64ee2927836f190c3553',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://walkingtutor.com/5191ed80f94c64ee2927836f190c3553/invoke.js"></scr' + 'ipt>');
+</script>
+<script type="text/javascript">
+	atOptions = {
+		'key' : '5191ed80f94c64ee2927836f190c3553',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://walkingtutor.com/5191ed80f94c64ee2927836f190c3553/invoke.js"></scr' + 'ipt>');
+</script>
+</div>
                         <!-- Content Column -->
                         <div class="col-lg-6 mb-4">
 
-
-
                             <!-- Illustrations -->
-                          
-                            <div id="datas" class="card shadow mb-4" style="background:lightblue; min-height:1500px">
+                            <div class="card shadow mb-4" style="max-height:400px;overflow:scroll">
+                              <br><br>
+
+                                 <a id="dat"></a>
                            
+                            </div>
+
+
+                    
+<script type="text/javascript"> var xhttp = new XMLHttpRequest(); xhttp.onreadystatechange = function() { if (this.readyState == 4 && this.status == 200) { var data=JSON.parse(xhttp.responseText); data.forEach(function(element) { document.getElementById("dat").innerHTML +='<div class="dvs"><img class="img-fluid px-0 px-sm-4 mt-0 mb-4" style="height: 100%;border-radius:10px 0px 0px 10px"src="' + element.jpg + '"><div style="position: relative;top:-135px;left:70px"><div style="max-width:80%"><h7 class="m-0 font-weight-bold text-primary">' + element.nama + '</h7></div><font class="m-0 font-weight-bold " style="font-size:12;color:yellow">download : ✓<br>demo : ✓<br>share wa : ✓<br></font><a href="' + element.url + '"><div class="vs1">open</div></a></div></div><br>'; }); } }; xhttp.open("GET", "http://localhost:8080/data.json", true); xhttp.send(); </script>
+
+                            <!-- Approach -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Artikel
+                                </h6>
+                                </div>
+                                <div class="card-body">
+                                    <p> Hai, apakah kamu sedang mencari penghasilan dari internet? khususnya bloger dan sejenisnya tetapi website kamu tidak diterima Adsense! tenang aku mau bagiin buat kalian 2  situs pengganti Adsense terbaik<br><br>
+                    1. Adstera<br>
+                    secara keseluruhan  Adstera menurut saya adalah situs yang lebih baik dari yang lainya jika ingin dibandingkan dengan Adsense, Adstera ini memiliki  Cpm yang cukup tinggi loh! cukup lumayan untuk penghasilan sampingan dari Adsense
+                    <br>
+    
+                    <br>
+                    2. Propeller Ads<br>
+                    jika dibandingkan dengan Adstera mungkin masih kalah saing di bagian cpm sih, tapi Propellerads memiliki jenis iklan yang sangat menarik loh, tetapi untuk Propellerads ini lebih mengarah ke iklan popunder sih yang terbilang nyebelin.<hr><br>
+                    nah itu dia situs pengganti Adsense, mulai sekarang jangan buang² waktu buat bermalas malasan atau cuma buat main ya, gunakan waktumu sebaik mungkin, jika bisa menghasilkan pundi² uang hanya dengan hp kenapa nggak?<br><br> oh iya.., dibawah adalah rincian penghasilan saya menggunakan iklan diatas,hehe masih dikit sih soalnya baru buat..</p>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
-                          
-<!--<script type="text/javascript">
+
+<div style="margin-left:-3px"> <script type="text/javascript">
 	atOptions = {
 		'key' : '5191ed80f94c64ee2927836f190c3553',
 		'format' : 'iframe',
@@ -331,17 +305,7 @@ data.forEach(function(element)
 		'params' : {}
 	};
 	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://walkingtutor.com/5191ed80f94c64ee2927836f190c3553/invoke.js"></scr' + 'ipt>');
-</script>-->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2793038976305606" crossorigin="anonymous"></script> <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-6r+dp+k-2z+by" data-ad-client="ca-pub-2793038976305606" data-ad-slot="2586644393"></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
-                            <!-- Approach -->
-                            <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Ads</h6>
-                                </div>
-                                <!--<script async="async" data-cfasync="false" src="https://walkingtutor.com/6ecb4929c350c147c5b8f87b9b6f45a4/invoke.js"></script>
-<div id="container-6ecb4929c350c147c5b8f87b9b6f45a4"></div>
-         -->                   </div>
-<!--
+</script>
 <script type="text/javascript">
 	atOptions = {
 		'key' : '5191ed80f94c64ee2927836f190c3553',
@@ -351,45 +315,44 @@ data.forEach(function(element)
 		'params' : {}
 	};
 	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://walkingtutor.com/5191ed80f94c64ee2927836f190c3553/invoke.js"></scr' + 'ipt>');
-</script>-->
-                        </div>
-                    </div>
-
+</script>
+</div>
                             <!-- Project Card Example -->
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Projects</h6>
+                                    <h6 class="m-0 font-weight-bold text-primary">Revenue</h6>
                                 </div>
                                 <div class="card-body">
-                                    <h4 class="small font-weight-bold">Blogger <span
-                                            class="float-right">2%</span></h4>
+                                    <h4 class="small font-weight-bold">Adstera <span
+                                            class="float-right">0.16$</span></h4>
                                     <div class="progress mb-4">
                                         <div class="progress-bar bg-danger" role="progressbar" style="width: 2%"
                                             aria-valuenow="2" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
-                                    <h4 class="small font-weight-bold">replit <span
-                                            class="float-right">68%</span></h4>
+                                    <h4 class="small font-weight-bold">Propeller ads <span
+                                            class="float-right">0.003$</span></h4>
                                     <div class="progress mb-4">
-                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 68%"
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 1%"
                                             aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
-                                    <h4 class="small font-weight-bold"> Github <span
-                                            class="float-right">30%</span></h4>
+                                    <h4 class="small font-weight-bold"> Saweria <span
+                                            class="float-right">Rp. 0</span></h4>
                                     <div class="progress mb-4">
-                                        <div class="progress-bar" role="progressbar" style="width: 30%"
+                                        <div class="progress-bar" role="progressbar" style="width: 0%"
                                             aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
-                                    <h4 class="small font-weight-bold">Account Setup <span
-                                            class="float-right">80%</span></h4>
+                                    <h4 class="small font-weight-bold">Total <span
+                                            class="float-right">0.163$</span></h4>
                                     <div class="progress">
-                                        <div class="progress-bar bg-success" role="progressbar" style="width: 80%"
-                                            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 3%"
+                                            aria-valuenow="1" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
                             </div>
+
+
                 </div>
                 <!-- /.container-fluid -->
-
 
 
             </div>
@@ -415,27 +378,8 @@ data.forEach(function(element)
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
     </a>
+    </div>
 
-    <!-- Logout Modal-->
-   
-<link href="https://fo-rpl.github.io/vendor/ads/style.css" rel="stylesheet" type="text/css" >
-<div class='sticky-ad' id='sticky-ad'>
- <div class='adB'>
-<script type="text/javascript">
-	atOptions = {
-		'key' : '5191ed80f94c64ee2927836f190c3553',
-		'format' : 'iframe',
-		'height' : 50,
-		'width' : 320,
-		'params' : {}
-	};
-	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://walkingtutor.com/5191ed80f94c64ee2927836f190c3553/invoke.js"></scr' + 'ipt>');
-</script>
- </div>
-<button aria-label='Close this ad' id="adss" class='sticky-ad-close-button' onclick='hilangkan()'></button>
-</div>
-<script src="https://fo-rpl.github.io/vendor/ads/script.js">
-</script>
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -445,8 +389,6 @@ data.forEach(function(element)
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
-    <script src="js/search.js"></script>
-
 
     <!-- Page level plugins -->
     <script src="vendor/chart.js/Chart.min.js"></script>
