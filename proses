@@ -33,7 +33,7 @@ git remote add origin https://github.com/fo-rpl/fo-rpl.github.io.git
 git pull --rebase origin master
 git rebase --continue
 git pull origin master
-git push -u origin master
+git push -u origin master && fo-rpl && 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
 else
 printf "batal \n"
 fi

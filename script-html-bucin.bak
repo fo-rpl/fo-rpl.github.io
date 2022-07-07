@@ -45,7 +45,7 @@ Border-bottom:1px solid darkslateblue
 }
 }
 .dvs{
-height:110; background: lightblue; border-radius:10px; animation-duration:3s; animation-iteration-count: infinite;animation-name:kelap;Border-left:4px solid darkslateblue
+height:110px; background: lightblue; border-radius:10px; animation-duration:3s; animation-iteration-count: infinite;animation-name:kelap;Border-left:4px solid darkslateblue
 }
 .vs1{
 position: relative;top:-44;left:120; background:lightgreen;width:70;height:30;border:2px solid darkslateblue; border-radius:5px; font-weight:bold; text-align:center;color:white
@@ -266,13 +266,11 @@ position: relative;top:-44;left:120; background:lightgreen;width:70;height:30;bo
                             <div class="card shadow mb-4" style="max-height:400px;overflow:scroll">
                               <br><br>
 
-                                 <a id="dat"></a>
-                           
                             </div>
 
 
                     
-<script type="text/javascript"> var xhttp = new XMLHttpRequest(); xhttp.onreadystatechange = function() { if (this.readyState == 4 && this.status == 200) { var data=JSON.parse(xhttp.responseText); data.forEach(function(element) { document.getElementById("dat").innerHTML +='<div class="dvs"><img class="img-fluid px-0 px-sm-4 mt-0 mb-4" style="height: 100%;border-radius:10px 0px 0px 10px"src="' + element.jpg + '"><div style="position: relative;top:-135px;left:70px"><div style="max-width:80%"><h7 class="m-0 font-weight-bold text-primary">' + element.nama + '</h7></div><font class="m-0 font-weight-bold " style="font-size:12;color:yellow">download : ✓<br>demo : ✓<br>share wa : ✓<br></font><a href="' + element.url + '"><div class="vs1">open</div></a></div></div><br>'; }); } }; xhttp.open("GET", "http://localhost:8080/data.json", true); xhttp.send(); </script>
+<script type="text/javascript"> var xhttp = new XMLHttpRequest(); xhttp.onreadystatechange = function() { if (this.readyState == 4 && this.status == 200) { var data=JSON.parse(xhttp.responseText); data.forEach(function(element) { document.getElementById("dat").innerHTML +='<div class="dvs"><img class="img-fluid px-0 px-sm-4 mt-0 mb-4" style="height: 100%;border-radius:10px 0px 0px 10px"src="' + element.jpg + '"><div style="position: relative;top:-135px;left:70px"><div style="max-width:80%"><h7 class="m-0 font-weight-bold text-primary">' + element.nama + '</h7></div><font class="m-0 font-weight-bold " style="font-size:12;color:yellow">download : ✓<br>demo : ✓<br>share wa : ✓<br></font><a href="' + element.url + '"><div class="vs1">open</div></a></div></div><br>'; }); } }; xhttp.open("GET", "data.json", true); xhttp.send(); </script>
 
                             <!-- Approach -->
                             <div class="card shadow mb-4">
@@ -281,6 +279,9 @@ position: relative;top:-44;left:120; background:lightgreen;width:70;height:30;bo
                                 </h6>
                                 </div>
                                 <div class="card-body">
+
+                                 <a id="dat"></a>
+                           
                                     <p> Hai, apakah kamu sedang mencari penghasilan dari internet? khususnya bloger dan sejenisnya tetapi website kamu tidak diterima Adsense! tenang aku mau bagiin buat kalian 2  situs pengganti Adsense terbaik<br><br>
                     1. Adstera<br>
                     secara keseluruhan  Adstera menurut saya adalah situs yang lebih baik dari yang lainya jika ingin dibandingkan dengan Adsense, Adstera ini memiliki  Cpm yang cukup tinggi loh! cukup lumayan untuk penghasilan sampingan dari Adsense
