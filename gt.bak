@@ -1,30 +1,99 @@
+<?php
 
+$draft = file_get_contents("draft/draft.json");
+$draft = json_decode($draft, TRUE);
+?>
 <html>
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<style>
+@keyframes jj{
+0%{
+ color: green;
+ content: "server is actived";
+ 
+}
+10%{
+ color: darkgreen;
+content: "server is actived..";
 
+}
+20%{
+ color:green;
+content: "server is actived....";
+
+}
+30%{
+ color: blue;
+content: "server is actived......";
+
+}
+40%{
+ color:green;
+content: "server is actived........";
+
+}
+50%{
+ color: darkgreen;
+content: "server is actived..........";
+}
+60%{
+ color:green;
+content: "server is actived..............";
+}
+70%{
+ color: darkgreen;
+content: "server is actived..............";
+}
+80%{
+ color:red;
+content: "server is actived..................";
+}
+90%{
+ color: darkgreen;
+content: "server is actived..................";
+}
+100%{
+ color:green;
+content: "server is actived......................";
+}
+
+}
+.aktif::before{
+ animation-name: jj;
+ animation-iteration-count: infinite;
+ animation-duration: .5s;
+ content: "";position: relative;
+ background: ;
+}
+.form-user{
+position:fixed;bottom:0;right:0;left:0
+}
+</style>
 </head>
 <body>
 
 <data id="data"></data>
-<input id="rvi" onclick="Rview()" style="position:fixed;top:0;right:0;" type="button" value="Review">
+<input class="aktif" id="rvi" onclick="Rview()" style="position:fixed;top:0;right:0;" type="button" value="Review">
 
 <input id="rvi1" onclick="editz()" style="position:fixed;top:-50px;right:0;" type="button" value="edit">
 
-<form id="editor" style="position:fixed;bottom:0;right:0;left:0" action="create.php" method="post">
+<form id="editor" class="form-user" action="create.php" method="post">
+
+ <div class="aktif"></div>
           <textarea style="background:transparent;height:180px;width:90%;opacity:0.5;color:red" readonly="readonly" type="text" id="data1" name="data"></textarea>
 <br>
-         &nbsp;nama file =<input style="background:transparent" type="text" id="jfile" name="jfile"><br>
-         &nbsp;judul hal &nbsp;=<input style="background:transparent" type="text" id="judulf" name="jdul"><br>
+         &nbsp;nama file =<input style="background:transparent" type="text" id="jfile" name="jfile" value="<?php
+echo $draft[0]['jfile'];
+?>"><br>
+         &nbsp;judul hal &nbsp;=<input style="background:transparent" type="text" id="judulf" name="jdul" value="<?php
+echo $draft[0]['judul'];
+?>"><br>
        <input type="submit" style="" onclick="alert('fungsi simpan ini hanya untuk menympan dalam bentuk file, halaman ini tidak akan meninggalkan jejak, pastikan projek kamu telah selesai, kamu bisa minympan text di hp mu jika ingin melanjutkan nanti')" value="simpan">
 
          <button type="button" onclick="document.getElementById('myinput').style='font-family: monospace;font-size: 10px; display:block;width:85%;height:310px;margin-left:20px;background:white;font-size:15px;'" value="2× size">max-size</button>
          <button type="button" onclick="document.getElementById('myinput').style='font-family: monospace;font-size: 10px; display:block;width:60%;height:60px;max-height:200px;margin-left:20px;background:transparent'" value="1× size">min size</button>
 
-  <textarea id="myinput" type="text"
-         placeholder=""
-         style="font-family: monospace;
-         font-size: 10px; display:block;min-width:60%; max-width:75%;width:70%;min-height:60px;max-height:200px;margin-left:20px;background:transparent"></textarea>
 
 <input onclick="editz1()" style="position:fixed;top:50px;right:0;" type="button" value="link">
 
@@ -36,7 +105,19 @@
 
 <input onclick="li()" style="position:fixed;top:210px;right:0;" type="button" value="Li">
 
-<input onclick="fokus()" style="position:fixed;top:250px;right:0;" type="reset" value="clear">
+<input onclick="fokus()" style="position:fixed;top:0;left:0;" type="reset" value="clear">
+
+<input onclick="rm()" style="position:fixed;top:250px;right:0;" type="reset" value="rm val">
+
+<input id="simpan-pem" name="simp" style="position:fixed;top:290px;right:0;" type="button" value="draft">
+
+
+  <textarea id="myinput" type="text" name="dta"
+         placeholder=""
+         style="font-family: monospace;
+         font-size: 10px; display:block;min-width:60%; max-width:75%;width:70%;min-height:60px;max-height:200px;margin-left:20px;background:transparent"><?php
+echo $draft[0]['data'];
+?></textarea>
 
 </form>
 
@@ -48,6 +129,9 @@ document.getElementById('judulf').value=judul;
 
 -->
 <script>
+function rm(){
+document.getElementById("data1").style='margin-left:-200px';
+}
 function fokus(){
 document.getElementById("myinput").focus();
 }
@@ -71,7 +155,7 @@ fokus();
 function h(){
 url = prompt('ukuran <h></h>');
 taut = prompt('nama');
-document.getElementById('myinput').value +='<h' + url + ' class="m-0 font-weight-bold text-primary">' + taut + '</h' + url + '>';
+document.getElementById('myinput').value +='<h' + url + ' style="color: black" class="m-0 font-weight-bold text-primary">' + taut + '</h' + url + '>';
 fokus()
 }
 function br(){
@@ -88,7 +172,7 @@ document.getElementById('myinput').value +='<li>';
 fokus();
 document.getElementById('myinput').value +='</li>';
 }
-document.getElementById('jfile').value ="judul.html";
+
 document.getElementById('jfile').addEventListener('keyup',
 name = this.value
 )
@@ -99,7 +183,23 @@ function (){judul = this.value}
 document.getElementById('myinput').addEventListener('keyup',
 function(e) {
 
-  document.getElementById('data').innerHTML =`<meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="description" content="artikel terbaik, template html gratis, download html bucin, cara membuat akun github, cara membuat akun Replit"><meta name="author" content="irul"><title>FO-REPL</title><!-- Custom fonts for this template--><link href="https://fo-rpl.github.io/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css"><link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"><!-- Custom styles for this template--><link href="https://fo-rpl.github.io/css/sb-admin-2.min.css" rel="stylesheet">
+  document.getElementById('data').innerHTML =`
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="artikel terbaik, template html gratis, download html bucin, cara membuat akun github, cara membuat akun Replit">
+  <meta name="author" content="irul">
+
+<title>FO-REPL</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="https://fo-rpl.github.io/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <!-- Custom styles for this template-->
+  <link href="https://fo-rpl.github.io/css/sb-admin-2.min.css" rel="stylesheet">
+</head>
+<body>
     <!-- Page Wrapper -->
     <div id="wrapper">
       <!-- Content Wrapper -->
@@ -468,8 +568,23 @@ function(e) {
   });
   
 
-document.getElementById('judulf').value=judul;
 </script>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#simpan-pem").click(function(){
+			var data = $('.form-user').serialize();
+			$.ajax({
+				type: 'POST',
+				url: "data.php",
+				data: data,
+				success: function() {
+					alert('succes');
+				}
+			});
+		});
+	});
+	</script>
 </body>
 </html>

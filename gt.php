@@ -155,7 +155,7 @@ fokus();
 function h(){
 url = prompt('ukuran <h></h>');
 taut = prompt('nama');
-document.getElementById('myinput').value +='<h' + url + ' class="m-0 font-weight-bold text-primary">' + taut + '</h' + url + '>';
+document.getElementById('myinput').value +='<h' + url + ' style="color: black" class="m-0 font-weight-bold">' + taut + '</h' + url + '>';
 fokus()
 }
 function br(){
