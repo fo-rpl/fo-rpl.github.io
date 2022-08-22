@@ -1,0 +1,355 @@
+<?php
+
+$draft = file_get_contents("draft/draft.json");
+$draft = json_decode($draft, TRUE);
+?>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<style>
+
+.aktif::before{
+ animation-name: jj;
+ animation-iteration-count: infinite;
+ animation-duration: .5s;
+ content: "";position: relative;
+ background: ;
+}
+.form-user{
+position:fixed;bottom:0;right:0;left:0
+}
+</style>
+</head>
+<body>
+
+<data id="data">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="artikel terbaik, template html gratis, download html bucin, cara membuat akun github, cara membuat akun Replit">
+  <meta name="author" content="irul">
+
+<title>FO-REPL</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="https://fo-rpl.github.io/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <!-- Custom styles for this template-->
+  <link href="https://fo-rpl.github.io/css/sb-admin-2.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+      <!-- Content Wrapper -->
+      <div id="content-wrapper" class="d-flex flex-column">
+        <!-- Main Content -->
+        <div id="content">
+          <!-- Topbar -->
+          <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+            <!-- Sidebar Toggle (Topbar) -->
+            <button class="btn btn-link d-md-none rounded-circle mr-3">
+              <i>FO-REPL</i>
+            </button>
+            <!-- Topbar Search -->
+            <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+              <div class="input-group">
+                <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-primary" type="button">
+                    <i class="fas fa-search fa-sm"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+            <!-- Topbar Navbar -->
+            <ul class="navbar-nav ml-auto">
+              <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+              <li class="nav-item dropdown no-arrow d-sm-none">
+                <a class="nav-link dropdown-toggle" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-search fa-fw"></i>
+                </a>
+                <!-- Dropdown - Messages -->
+                <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                  <form class="form-inline mr-auto w-100 navbar-search">
+                    <div class="input-group">
+                      <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                      <div class="input-group-append">
+                        <button class="btn btn-primary" type="button">
+                          <i class="fas fa-search fa-sm"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </li>
+              <!-- Nav Item - Alerts -->
+              <li class="nav-item dropdown no-arrow mx-1">
+                <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-bell fa-fw"></i>
+                  <!-- Counter - Alerts -->
+                  <span class="badge badge-danger badge-counter">3+</span>
+                </a>
+                <!-- Dropdown - Alerts -->
+                <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+                  <h6 class="dropdown-header"> Notifikasi </h6>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <div class="mr-3">
+                      <div class="icon-circle bg-primary">
+                        <i class="fas fa-file-alt text-white"></i>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="small text-gray-500">26 Juni, 2022</div>
+                      <span class="font-weight-bold">Website baru telah dibuat</span>
+                    </div>
+                  </a>
+                  <a class="dropdown-item d-flex align-items-center" href="https://saweria.co/stsr">
+                    <div class="mr-3">
+                      <div class="icon-circle bg-success">
+                        <i class="fas fa-donate text-white"></i>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="small text-gray-500">25 Juni, 2022</div> hai! kamu bisa membantu untuk mengembangkan website ini
+                    </div>
+                  </a>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <div class="mr-3">
+                      <div class="icon-circle bg-warning">
+                        <i class="fas fa-exclamation-triangle text-white"></i>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="small text-gray-500">25 Juni, 2022</div> copyright mungkin dimiliki oleh creator script html, hubungi admin ...
+                    </div>
+                  </a>
+                  <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                </div>
+              </li>
+              <!-- Nav Item - Messages -->
+              <li class="nav-item dropdown no-arrow mx-1">
+                <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-envelope fa-fw"></i>
+                  <!-- Counter - Messages -->
+                  <span class="badge badge-danger badge-counter">1</span>
+                </a>
+                <!-- Dropdown - Messages -->
+                <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
+                  <h6 class="dropdown-header"> Message Center </h6>
+                  <a class="dropdown-item d-flex align-items-center" href="https://wa.me/+6285225983150">
+                    <div class="dropdown-list-image mr-3">
+                      <img class="rounded-circle" src="https://fo-rpl.github.io/img/undraw_profile.svg" alt="...">
+                      <div class="status-indicator bg-success"></div>
+                    </div>
+                    <div class="font-weight-bold">
+                      <div class="text-truncate">Semoga bisa bermanfaat</div>
+                      <div class="small text-gray-500">Admin · Now</div>
+                    </div>
+                  </a>
+                  <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+                </div>
+              </li>
+              <div class="topbar-divider d-none d-sm-block"></div>
+              <!-- Nav Item - User Information -->
+            </ul>
+          </nav>
+          <!-- End of Topbar -->
+          <!-- Begin Page Content -->
+          <div class="container-fluid">
+            <div class="row">
+              <!-- Pie Chart -->
+              <div class="col-xl-4 col-lg-5">
+                <div class="card shadow mb-4">
+                  <!-- Card Header - Dropdown -->
+                  <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">Website</h6>
+                    <div class="dropdown no-arrow">
+                      <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
+                        <div class="dropdown-header">My Website:</div>
+                        <a class="dropdown-item" href="#">Id.repl.co</a>
+                        <a class="dropdown-item" href="https://file.only-me.repl.co/tmplt/down.html ">file.only-me.repl.co</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="https://fo-rpl.github.io">fo-rpl.github.io</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card Body -->
+                </div>
+              </div>
+            </div>
+            <!-- Content Row -->
+            <div class="row">
+              <!-- Content Column -->
+              <div class="col-lg-6 mb-4">
+                <!-- Illustrations -->
+                
+                <div class="card shadow mb-4">
+                  <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary"> </h6>
+                  </div>
+                  <div id="dats" class="card-body">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Project Card Example -->
+          </div>
+          <!-- /.container-fluid -->
+        </div>
+        <!-- End of Main Content -->
+        <!-- Footer -->
+        <footer class="sticky-footer bg-white">
+          <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+              <span>Copyright &copy; fo-rpl.github.io 2022</span>
+            </div>
+          </div>
+        </footer>
+        <!-- End of Footer -->
+      </div>
+      <!-- End of Content Wrapper -->
+    </div>
+    <!-- End of Page Wrapper -->
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+    </div>
+</data>
+<input class="aktif" id="rvi" onclick="Rview()" style="position:fixed;top:0;right:0;" type="button" value="Review">
+
+<input id="rvi1" onclick="editz()" style="position:fixed;top:-50px;right:0;" type="button" value="edit">
+
+<form id="editor" class="form-user" action="create.php" method="post">
+
+ <div class="aktif"></div>
+       <br>
+       <input type="button" id="simpankonten" onclick="alert('fungsi simpan ini hanya untuk menympan dalam bentuk file, halaman ini tidak akan meninggalkan jejak, pastikan projek kamu telah selesai, kamu bisa minympan text di hp mu jika ingin melanjutkan nanti')" value="simpan">
+
+         <button type="button" onclick="document.getElementById('myinput').style='font-family: monospace;font-size: 10px; display:block;width:85%;height:310px;margin-left:20px;background:white;font-size:15px;'" value="2× size">max-size</button>
+         <button type="button" onclick="document.getElementById('myinput').style='font-family: monospace;font-size: 10px; display:block;width:60%;height:60px;max-height:200px;margin-left:20px;background:transparent'" value="1× size">min size</button>
+
+
+<input onclick="editz1()" style="position:fixed;top:50px;right:0;" type="button" value="link">
+
+<input onclick="h()" style="position:fixed;top:90px;right:0;" type="button" value="<h>">
+
+<input onclick="br()" style="position:fixed;top:130px;right:0;" type="button" value="<br>">
+
+<input onclick="img()" style="position:fixed;top:170px;right:0;" type="button" value="img">
+
+<input onclick="li()" style="position:fixed;top:210px;right:0;" type="button" value="Li">
+
+<input onclick="fokus()" style="position:fixed;top:0;left:0;" type="reset" value="clear">
+
+<input onclick="rm()" style="position:fixed;top:250px;right:0;" type="reset" value="rm val">
+
+<input id="simpan-pem" name="simp" style="position:fixed;top:290px;right:0;" type="button" value="draft">
+
+
+  <textarea id="myinput" type="text" name="dta"
+         placeholder=""
+         style="font-family: monospace;
+         font-size: 10px; display:block;min-width:60%; max-width:75%;width:70%;min-height:60px;max-height:200px;margin-left:20px;background:transparent"><?php
+echo $draft[0]['data'];
+?></textarea>
+
+</form>
+
+<!--
+name = prompt('buat nama file');
+judul = prompt('buat judul');
+document.getElementById('jfile').value=name;
+document.getElementById('judulf').value=judul;
+
+-->
+<script>
+function rm(){
+document.getElementById("data1").style='margin-left:-200px';
+}
+function fokus(){
+document.getElementById("myinput").focus();
+}
+function Rview() {
+document.getElementById('editor').style.display='none';
+document.getElementById('rvi1').style.top="0";
+document.getElementById('rvi').style.top="-50px";
+}
+function editz(){
+document.getElementById('editor').style.display='block';
+document.getElementById('rvi').style.top="0";
+document.getElementById('rvi1').style.top="-50px";
+}
+
+function editz1(){
+url = prompt('link url');
+taut = prompt('nama');
+document.getElementById('myinput').value +='<a href="' + url + '">' + taut + '</a>';
+fokus();
+}
+function h(){
+url = prompt('ukuran <h></h>');
+taut = prompt('nama');
+document.getElementById('myinput').value +='<h' + url + ' style="color: black" class="m-0 font-weight-bold">' + taut + '</h' + url + '>';
+fokus()
+}
+function br(){
+document.getElementById('myinput').value +='<br>';
+fokus()
+}
+function img(){
+url = prompt('link url');
+document.getElementById('myinput').value +='<img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;"src="' + url + '">';
+fokus()
+}
+function li(){
+document.getElementById('myinput').value +='<li>';
+fokus();
+document.getElementById('myinput').value +='</li>';
+}
+
+document.getElementById('myinput').addEventListener('keyup',
+function(e) {
+
+  document.getElementById('dats').innerHTML =this.value;})
+</script>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#simpan-pem").click(function(){
+			var data = $('.form-user').serialize();
+			$.ajax({
+				type: 'POST',
+				url: "dats.php",
+				data: data,
+				success: function() {
+					alert('succes');
+				}
+			});
+		});
+	});
+	</script>
+
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#simpankonten").click(function(){
+			var data = $('.form-user').serialize();
+			$.ajax({
+				type: 'POST',
+				url: "dats1.php",
+				data: data,
+				success: function() {
+					alert('succes');
+				}
+			});
+		});
+	});
+	</script>
+</body>
+</html>

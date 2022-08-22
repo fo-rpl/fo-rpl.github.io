@@ -1,0 +1,41 @@
+var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+         var data=JSON.parse(xhttp.responseText);
+         data.forEach(function(element) {
+      document.getElementById("data-template").innerHTML +=`
+<div class="col-md-6 mb-5">
+                    <div class="position-relative">
+                        <img class="img-fluid w-100" src="` + element.image + `" alt="">
+                        <div class="position-absolute bg-primary d-flex flex-column align-items-center justify-content-center rounded-circle"
+                            style="width: 60px; height: 60px; bottom: -30px; right: 30px;">
+                            <h4 class="font-weight-bold mb-n1">$</h4>
+                            <small class="text-white text-uppercase">Free</small>
+                        </div>
+                    </div>
+                    <div class="bg-secondary" style="padding: 30px;">
+                        <div class="d-flex mb-3">
+                           
+                            <div class="d-flex align-items-center ml-4">
+                                <i class="far fa-bookmark text-primary"></i>
+                                <a class="text-muted ml-2" href="">Web Design</a>
+                            </div>
+                        </div>
+                        <h4 class="font-weight-bold mb-3">` + element.judul + `</h4>
+                        
+                       ✓ ` + element.tags1 + `
+                     <br />
+                       ✓ ` + element.tags2 + `
+                     <br />
+                       ✓ ` + element.tags3 + `
+                       <br />
+                     <a href="" style="border-radius:5px" class="btn btn-primary py-1 px-2 my-1">Demo</a>
+                     <a href="" style="border-radius:5px" class="btn btn-primary py-1 px-2 my-1">download</a>
+                    
+                    </div>
+                </div>`;
+    });
+      }
+  };
+  xhttp.open("GET", "js/upload.json", true);
+  xhttp.send();

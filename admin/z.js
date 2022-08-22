@@ -1,0 +1,7 @@
+var au=`[
+    {
+        "judul": "Y",
+        "data": "G",
+        "jfile": "Wed Jul 20 2022 || 19.37.59"
+    }
+]`;

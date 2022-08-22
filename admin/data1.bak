@@ -1,0 +1,70 @@
+function sendData (sData) { location.search = sData; }
+
+function GetURLParameter(sParam)
+{
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++) 
+    {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == sParam) 
+        {
+            return sParameterName[1];
+        }
+    }
+}
+var modul = GetURLParameter('modul');
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function(){ 
+if (this.readyState == 4 && this.status == 200)
+{ var data=JSON.parse(xhttp.responseText);
+  
+
+   document.getElementById('issi').innerHTML=data[modul].data;
+document.getElementById('ns').value=modul;
+document.getElementById('nilai2').value=modul;
+
+
+ } }; 
+xhttp.open("GET", "data.json", true); xhttp.send();
+
+function juml(){
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function(){ 
+if (this.readyState == 4 && this.status == 200)
+{ var data=JSON.parse(xhttp.responseText);
+   
+var dua = document.getElementById('nilai2').value;
+
+var satu = '1'; 
+			var totals = parseInt(satu) + parseInt(dua);
+sendData('modul=' +totals);
+   document.getElementById('issi').innerHTML=data[totals].data;
+document.getElementById('ns').value=totals;
+document.getElementById('nilai2').value=totals;
+
+ } }; 
+xhttp.open("GET", "data.json", true); xhttp.send(); }
+
+function kembl(){
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function(){ 
+if (this.readyState == 4 && this.status == 200)
+{ var data=JSON.parse(xhttp.responseText);
+   
+var dua = document.getElementById('nilai2').value;
+			
+			var satu = 1; 
+			if (dua > 0){
+			var totals = dua - 1;
+			sendData('modul=' +totals);
+document.getElementById('nilai2').value=totals;
+document.getElementById('ns').value=totals;
+   document.getElementById('issi').innerHTML =data[totals].data;
+   
+			}
+   
+ } }; 
+xhttp.open("GET", "data.json", true); xhttp.send(); }

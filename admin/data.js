@@ -1,0 +1,68 @@
+ var data=JSON.parse(au);
+data.forEach(function(element)
+{ document.getElementById("komen").innerHTML +=`
+
+                  <a class="dropdown-item d-flex align-items-center">
+                    <div class="dropdown-list-image mr-3">
+                      <img class="rounded-circle" src="https://fo-rpl.github.io/img/undraw_profile.svg" alt="...">
+                      <div class="status-indicator bg-success"></div>
+                    </div>
+                    <div class="font-weight-bold">
+                      <div>`+ element.judul +`</div>
+                      <div class="small text-gray-500">`+ element.data +` · `+ element.jfile +`</div>
+                    </div>
+                  </a>
+
+`; }); 
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function(){ 
+if (this.readyState == 4 && this.status == 200)
+{ var data=JSON.parse(xhttp.responseText);
+  
+
+   document.getElementById('issi').innerHTML=data[0].data;
+
+
+ } }; 
+xhttp.open("GET", "data.json", true); xhttp.send();
+
+function juml(){
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function(){ 
+if (this.readyState == 4 && this.status == 200)
+{ var data=JSON.parse(xhttp.responseText);
+   
+var dua = document.getElementById('nilai2').value;
+
+var satu = '1'; 
+			var totals = parseInt(satu) + parseInt(dua);
+
+   document.getElementById('issi').innerHTML=data[totals].data;
+
+document.getElementById('nilai2').value=totals;
+
+ } }; 
+xhttp.open("GET", "data.json", true); xhttp.send(); }
+
+function kembl(){
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function(){ 
+if (this.readyState == 4 && this.status == 200)
+{ var data=JSON.parse(xhttp.responseText);
+   
+var dua = document.getElementById('nilai2').value;
+			
+			var satu = 1; 
+			if (dua > 0){
+			var totals = dua - 1;
+			
+document.getElementById('nilai2').value=totals;
+
+   document.getElementById('issi').innerHTML =data[totals].data;
+   
+			}
+   
+ } }; 
+xhttp.open("GET", "data.json", true); xhttp.send(); }
