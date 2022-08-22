@@ -1,0 +1,125 @@
+
+<html>
+<!-- ganti pesan nya disini -->
+<script>
+pesan1='hai kamu😊';
+buton1='iya?';
+image1='';
+
+pesan2='sebenernya aku itu sayang banget sama kamu 😣';
+buton2='lanjut';
+image2='https://i.postimg.cc/13jrhms4/tkthao219-bubududu.gif';
+
+pesan3='kamu mau kan jadi pacar aku🥰';
+buton3='mau';
+tolak='ngga';
+image3='https://i.postimg.cc/5NNFghL0/g5.gif';
+
+pesan4='makasih🥰';
+
+pesan5='ngga ada yang lebih bahagia selain bisa memilikimu';
+imageterima='https://c.tenor.com/wkzCX9s5kxQAAAAi/0906-peacegoma.gif';
+
+pesantolak='sejujurnya tidak ada yang lebih membuat ku bahagia selain bisa memilikimu,maaf! mungkin aku terlalu berharap kepadamu😞';
+imagegagal='https://c.tenor.com/QOzMqPvW8PUAAAAi/love-you.gif';
+
+</script>
+<head>
+     <meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script><script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
+
+<style>
+.vdvd{position:fixed;top:-120px;left:0px; right:0px;bottom:0;scale:1.1}
+</style>
+  </head>
+<!-- jangan diubah ya -->
+<body>
+<div>
+<video onload="loading()" id="myvid" onplay="lanjut()" class="vdvd" width="105%" height="150%" src="https://sebenarnya.storyku.repl.co/lv.mp4">
+</video>
+</div>
+<script>
+
+function lanjut(){Swal.fire({backdrop:'transparent', background:'transparent',title:'' + pesan1,imageWidth: 150,imageUrl:'' + image1, allowOutsideClick:false, showConfirmButton: true,confirmButtonText:'' + buton1,timer:3000})
+.then(() => {Swal.fire({backdrop:'transparent', background:'transparent',title:'' + pesan2,imageWidth: 150,imageUrl:'' + image2,allowOutsideClick:false, showConfirmButton:true,confirmButtonText:'' + buton2,timer:2600})
+.then(() => {Swal.fire({backdrop:'transparent', background:'transparent',title:'' + pesan3,imageWidth: 150,imageUrl:'' + image3,allowOutsideClick:false, showConfirmButton: true, showCancelButton:true,cancelButtonText:'' + tolak,confirmButtonText:'' + buton3,timer:00})
+.then((jwb) => {if(jwb.isConfirmed){Swal.fire({backdrop:'transparent', background:'transparent',title:'' + pesan4,imageWidth: 150,allowOutsideClick:false, showConfirmButton:true,timer:1500})
+.then(() => {Swal.fire({backdrop:'transparent', background:'transparent',imageWidth: 150,imageUrl:'' + imageterima,html:`<div style="border:2px solid silver; border-radius:12px;color:white"><p style="font-family: ubuntu; font-weight:bold" id="typed"></p>
+<p><a id="kirim1" href="https://wa.me/+6285320808863" style="text-decoration:none;padding:4px; border-radius:7px;border:1px solid yellow; background-color:mediumslateblue; font-family: ubuntu;color:white; font-weight:bold">[💝WhatsApp💝]</a></p>
+</div>`,allowOutsideClick:false, showConfirmButton:false,timer:00});typ()
+.then(() => {vid.play()})
+})}
+else if(jwb.dismiss === Swal.DismissReason.cancel){Swal.fire({imageWidth: 150,imageUrl:'' + imagegagal,backdrop:'transparent', background:'transparent',html:`<div style="border:2px solid silver; border-radius:12px;color:white"><p style="font-family: ubuntu; font-weight:bold" id="typing"></p><br>
+<p><a href="https://wa.me/+6285320808863" id="kirim" style="text-decoration:none;padding:4px; border-radius:7px;border:1px solid yellow; background-color:mediumslateblue; font-family: ubuntu;color:white; font-weight:bold">[💝WhatsApp💝]</a></p></div>`,allowOutsideClick:false, showConfirmButton:false,timer:00});typd()}})
+})
+})
+}
+
+var vid = document.getElementById("myvid");
+
+function playVid() {
+    vid.play();
+}
+
+function pauseVid() {
+    vid.pause();
+}
+function loading(){
+Swal.fire({backdrop:'transparent', background:'white',title:'loading bentar ya biar ngga error', text:'',allowOutsideClick:false, showConfirmButton:false,timer:1900}).then(()=>{load()});
+function load(){
+let timerInterval
+Swal.fire({
+  title: 'klik play setelah ada gambarnya ya',
+  html: 'download resource dalam <b></b> milliseconds.',
+  timer: 1000,
+  timerProgressBar: true,
+  allowOutsideClick:false,
+  didOpen: () => {
+    Swal.showLoading()
+    const b = Swal.getHtmlContainer().querySelector('b')
+    timerInterval = setInterval(() => {
+      b.textContent = Swal.getTimerLeft()
+    }, 100)
+  },
+  willClose: () => {
+    clearInterval(timerInterval)
+  }
+}).then((result) => {
+  if (result.dismiss === Swal.DismissReason.timer) {
+    Swal.fire({backdrop:'transparent', background:'transparent',showConfirmButton:false, allowOutsideClick:false,html:`<a onclick="vid.play()" style="padding:9px; background-color:purple;border:4px solid blue; border-radius:7px;color:aqua; font-family: ubuntu; font-weight:bold">💝klik dong💝</a>`})
+  }
+})
+}
+}
+
+        
+</script>
+<script>
+
+            var i = 0;
+            var txt = '' ;
+            var speed = 70;
+            
+            function typd() {
+              if (i < pesantolak.length) {
+                document.getElementById("typing").innerHTML += pesantolak.charAt(i);
+                i++;
+                setTimeout(typd, speed);
+              }
+            }
+
+
+            var i = 0;
+            var txt = '' ;
+            var speed = 70;
+            
+            function typ() {
+              if (i < pesan5.length) {
+                document.getElementById("typed").innerHTML += pesan5.charAt(i);
+                i++;
+                setTimeout(typ, speed);
+              }
+            }
+        
+</script>
+</body>
+</html>
